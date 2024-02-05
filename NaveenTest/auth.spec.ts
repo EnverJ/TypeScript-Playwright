@@ -31,7 +31,6 @@ test("auth test", async () => {
 
   // await new Promise(() => {}); // prevents your script from existing!!!
 });
-
 function createAuthHeader(username: any, password: any) {
   return "Basic " + btoa(username + ":" + password);
 }
