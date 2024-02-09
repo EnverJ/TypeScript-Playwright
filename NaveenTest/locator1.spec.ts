@@ -61,5 +61,8 @@ test("LOCATOR Test", async () => {
   await pwdConfirm.fill("456464654");
   await searchBox.fill("searching");
 
+  // 6. Data-test-id
+  // const logName:Locator = page.getByTestId("password");  //   https://playwright.dev/docs/api/class-framelocator#frame-locator-get-by-test-id
+
   await new Promise(() => {});
 });
