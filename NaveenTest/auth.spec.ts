@@ -22,7 +22,7 @@ test("auth test", async () => {
   const password: string = "admin";
 
   // const authHeader = "Basic " + btoa(username + ":" + password);
-  // page.setExtraHTTPHeaders({ Authorization: authHeader });  or  create function createAuthHeader();
+  // page.setExtraHTTPHeaders({ Authorization: authHeader });  or create function createAuthHeader();
   page.setExtraHTTPHeaders({
     Authorization: createAuthHeader(username, password),
   });
