@@ -10,9 +10,9 @@ import { log } from "console";
 import { webkit, chromium, firefox } from "@playwright/test";
 
 test("Type characters sequentially", async () => {
-  const browser: Browser = await chromium.launch({
+  const browser: Browser = await webkit.launch({
     headless: false,
-    channel: "chrome",
+    channel: "webkit",
   });
   const page: Page = await browser.newPage();
   await page.goto("https://www.flipkart.com/");
