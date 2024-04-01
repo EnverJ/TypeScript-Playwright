@@ -1,11 +1,4 @@
-import {
-  test,
-  expect,
-  Browser,
-  Page,
-  Locator,
-  FrameLocator,
-} from "@playwright/test";
+import { test, expect, Browser, Page, Locator } from "@playwright/test";
 import { log } from "console";
 import { webkit, chromium, firefox } from "@playwright/test";
 import path from "path";
